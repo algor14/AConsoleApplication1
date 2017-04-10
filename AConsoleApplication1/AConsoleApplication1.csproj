@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Band.cs" />
+    <Compile Include="Bar.cs" />
+    <Compile Include="Ganre.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="Instruments.cs" />
+    <Compile Include="Musician.cs" />
+    <Compile Include="Producer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TechSpecialist.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

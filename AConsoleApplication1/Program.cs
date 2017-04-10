@@ -10,8 +10,29 @@ namespace AConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("test1");
-            Console.WriteLine("test2");
+            Band rollingStones = new Band("The Rolling Stones", Ganre.Rock)
+            {
+                //Name = "The Rolling Stones",
+                //Ganre = Ganre.Rock,
+                Musicians = new Musician[]
+                {
+                    new Musician("Mick Jagger", DateTime.Now) {Instruments = new Instrument[] { new Instrument() {Name = "Drum" } }},
+                    new Musician( "Kith Richards", DateTime.Now) {Instruments = new Instrument[] { new Instrument() {Name = "guitar" } } }
+                },
+                TechPerconnel = new TechSpecialist[]
+                {
+                    new TechSpecialist("Jhon Smith", DateTime.Now) {},
+                    new TechSpecialist("Jhon Smith", DateTime.Now) {},
+                    new TechSpecialist("Jhon Smith", DateTime.Now) {}
+                },
+                Producers = new Producer[]
+                {
+                    new Producer("Joe Black", DateTime.Now) {IsCheating = false}
+                }
+            };
+            rollingStones.PerformConcert();
+            Bar bar = new Bar("Old Ham");
+            //bar.MakeDrunk(rollingStones.GetAllPeople);
         }
     }
 }
